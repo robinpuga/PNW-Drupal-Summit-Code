@@ -47,7 +47,7 @@ function newproject_drush_command() {
     'bootstrap' => DRUSH_BOOTSTRAP_DRUSH, // No bootstrap at all.
   );
 
-  $items['db create'] = array(
+  $items['db-create'] = array(
     // the name of the function implementing your command.
     'callback' => 'create_empty_db',
     // a short description of your command
@@ -74,7 +74,7 @@ function newproject_drush_help($section) {
   switch ($section) {
     case 'drush:new-project':
       return dt("Setup project file structure for new client.");
-    case 'drush:db create':
+    case 'drush:db-create':
       return dt("Create an empty utf-8 database.");
   }
 }
