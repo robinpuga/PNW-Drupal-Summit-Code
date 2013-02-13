@@ -10,7 +10,7 @@
 // 3628800 = six weeks in seconds
 $timecheck = time() - 30; // currently set to 30 secs
 // $sql = "SELECT nid, title FROM node WHERE title = 'Community Programming' AND created < " . $timecheck . " ORDER BY created DESC;";
-$sql = "SELECT nid, title, vid, created FROM node WHERE created < " . $timecheck . " ORDER BY created DESC;";
+$sql = "SELECT nid, title, vid, created, updated FROM node WHERE created < " . $timecheck . " ORDER BY created DESC;";
 
 
 drush_print("SQL query to retrieve nodes:"); 
